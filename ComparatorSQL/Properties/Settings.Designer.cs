@@ -79,5 +79,29 @@ namespace ComparatorSQL.Properties {
                 return ((string)(this["version"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lastQuery1 {
+            get {
+                return ((string)(this["lastQuery1"]));
+            }
+            set {
+                this["lastQuery1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string lastQuery2 {
+            get {
+                return ((string)(this["lastQuery2"]));
+            }
+            set {
+                this["lastQuery2"] = value;
+            }
+        }
     }
 }

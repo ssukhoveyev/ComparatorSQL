@@ -144,6 +144,7 @@
             this.MaximumSize = new System.Drawing.Size(409, 179);
             this.MinimumSize = new System.Drawing.Size(409, 179);
             this.Name = "FormDBSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Настройки БД";
             this.ResumeLayout(false);
             this.PerformLayout();
