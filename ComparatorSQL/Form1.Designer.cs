@@ -35,6 +35,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подключениеКБазеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -45,6 +48,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(993, 24);
@@ -120,6 +125,21 @@
             this.textBox2.Size = new System.Drawing.Size(471, 91);
             this.textBox2.TabIndex = 1;
             // 
+            // настройкиToolStripMenuItem
+            // 
+            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.подключениеКБазеToolStripMenuItem});
+            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.настройкиToolStripMenuItem.Text = "Настройки";
+            // 
+            // подключениеКБазеToolStripMenuItem
+            // 
+            this.подключениеКБазеToolStripMenuItem.Name = "подключениеКБазеToolStripMenuItem";
+            this.подключениеКБазеToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.подключениеКБазеToolStripMenuItem.Text = "Подключение к базе";
+            this.подключениеКБазеToolStripMenuItem.Click += new System.EventHandler(this.подключениеКБазеToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +151,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Сравнение результатов SQL запросов";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -153,6 +175,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem подключениеКБазеToolStripMenuItem;
     }
 }
 

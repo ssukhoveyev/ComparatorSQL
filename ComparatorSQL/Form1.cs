@@ -16,5 +16,11 @@ namespace ComparatorSQL
         {
             InitializeComponent();
         }
+
+        private void подключениеКБазеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDBSettings f = new FormDBSettings();
+            f.Show();
+        }
     }
 }
