@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormApp));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.подключениеКБазеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.действияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подключениеКБазеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -38,8 +41,6 @@
             this.buttonGO = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBoxQuery2 = new System.Windows.Forms.TextBox();
-            this.действияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.подключениеКБазеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -74,6 +75,21 @@
             this.подключениеКБазеToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.подключениеКБазеToolStripMenuItem.Text = "Подключение к базе";
             this.подключениеКБазеToolStripMenuItem.Click += new System.EventHandler(this.подключениеКБазеToolStripMenuItem_Click);
+            // 
+            // действияToolStripMenuItem
+            // 
+            this.действияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.подключениеКБазеToolStripMenuItem1});
+            this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
+            this.действияToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.действияToolStripMenuItem.Text = "Действия";
+            // 
+            // подключениеКБазеToolStripMenuItem1
+            // 
+            this.подключениеКБазеToolStripMenuItem1.Name = "подключениеКБазеToolStripMenuItem1";
+            this.подключениеКБазеToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
+            this.подключениеКБазеToolStripMenuItem1.Text = "Подключение к базе";
+            this.подключениеКБазеToolStripMenuItem1.Click += new System.EventHandler(this.подключениеКБазеToolStripMenuItem1_Click);
             // 
             // statusStrip1
             // 
@@ -167,21 +183,6 @@
             this.textBoxQuery2.Size = new System.Drawing.Size(471, 91);
             this.textBoxQuery2.TabIndex = 1;
             // 
-            // действияToolStripMenuItem
-            // 
-            this.действияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.подключениеКБазеToolStripMenuItem1});
-            this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
-            this.действияToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.действияToolStripMenuItem.Text = "Действия";
-            // 
-            // подключениеКБазеToolStripMenuItem1
-            // 
-            this.подключениеКБазеToolStripMenuItem1.Name = "подключениеКБазеToolStripMenuItem1";
-            this.подключениеКБазеToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
-            this.подключениеКБазеToolStripMenuItem1.Text = "Подключение к базе";
-            this.подключениеКБазеToolStripMenuItem1.Click += new System.EventHandler(this.подключениеКБазеToolStripMenuItem1_Click);
-            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,6 +191,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
